@@ -1,0 +1,113 @@
+body{
+    background-color: black;
+}
+
+header{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height:66px;
+    color:white;
+    background-color:black;
+    border-bottom:1px solid grey;
+}
+
+#frm_titulo img{
+    width: 64px;
+    height: 64px;
+    position: relative;
+    left: 2%;
+}
+
+#btn_donacion{
+    position: relative;
+    top: -60px;
+    left: 88%;
+    width: 10%;
+    height: 80%;
+    background-color: rgb(76, 175, 80);
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+
+}
+#btn_donacion:hover{
+    width: 10%;
+    height: 80%;
+    background-color: rgb(76, 175, 80);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+#inp_numero{
+    width: 60%;
+    height: 20%;
+    background-color: black;
+    color:white;
+    font-size:4rem;
+    position:relative;
+    top:30%;
+    left: 20%;    
+    margin-top: 20%;
+}
+#dv_base{
+    cursor: pointer;
+    color:white;
+    background: black;
+    height: 5%;
+    width: 2%;
+    display:block;
+    position: relative;
+    top:-5%;
+    left: 77%;
+}
+#myModal{
+    color:black;
+}
+
+#resultado{
+    display: none;
+    color: white;
+    background-color:rgba(169,167,166,.1);
+    width: 40%;
+    font-size: 2rem;
+    text-align:center;
+    position: relative;
+    top: 25%;
+    left: 30%;
+}
+footer{
+    width: 100%;
+    /*background-color: white;*/
+    height: 100px;
+    position: absolute;
+    bottom:0; 
+    left: 0;
+    color:white;
+}
+footer img{
+    height: 50%;
+    width: 5%;
+    position: relative;
+    left:90%;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Estilo para la pagina de DONACION*/
+#credit_frm{
+    width: 40%;
+    position: relative;
+    top: center
+    padding:15px;
+    margin: auto;
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Base to Base</title>
+        <link rel="icon" href="icons/bb16.png" type="image/png"> 
+        <meta charset=UTF-8>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilo/estilo.css">
+    </head>
+
+    <body>
+
+        <header>
+
+            <div id="frm_titulo">
+                <img src="icons/bb64.png">
+            </div>
+            <button name="donacion" id="btn_donacion" type="button" data-toggle="modal" data-target="#myModal">Donacion</button>
+
+
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Donaciones BTB</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Todo el dinero recaudado lo vamos a gastar en alcohol, pizza y juegos online</p>
+                        </div>
+                        <div class="modal-footer">
+                            <form>
+                                <script src='https://checkout.epayco.co/checkout.js' 
+                                    data-epayco-key='572c1018c68274b80a58b5cf1500d966' 
+                                    class='epayco-button' 
+                                    data-epayco-amount='5950' 
+                                    data-epayco-tax='950'
+                                    data-epayco-tax-base='5000'
+                                    data-epayco-name='Donacion' 
+                                    data-epayco-description='Donacion' 
+                                    data-epayco-currency='COP'    
+                                    data-epayco-country='CO' 
+                                    data-epayco-test='true' 
+                                    data-epayco-external='false' 
+                                    data-epayco-response='http://localhost:3000/'  
+                                    data-epayco-confirmation='' 
+                                    data-epayco-button='https://369969691f476073508a-60bf0867add971908d4f26a64519c2aa.ssl.cf5.rackcdn.com/btns/boton_carro_de_compras_epayco5.png'> 
+                                </script> 
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <section>
+            <form action="/resultado" method="post">   
+                <input type="text" id="inp_numero" autocomplete="off" onkeyup="convertir()">
+
+                <div id="dv_base" title = "base 10" value="1" onclick="cambiar_base()"  >10</div>
+
+                <div id="resultado"></div>
+            </form>    
+        </section>
+
+        <footer>
+            <img src="img/logo_wpp.png" onclick="enviar_mensaje()">
+        </footer>
+        
+    </body>
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/js.js"></script>
+</html>
