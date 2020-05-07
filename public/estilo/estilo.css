@@ -24,7 +24,6 @@ header{
     position: relative;
     top: -60px;
     left: 88%;
-    width: 10%;
     height: 80%;
     background-color: rgb(76, 175, 80);
     border: none;
@@ -32,16 +31,11 @@ header{
     text-align: center;
     display: inline-block;
     font-size: 16px;
-
+    padding: 1vw;
 }
+
 #btn_donacion:hover{
-    width: 10%;
-    height: 80%;
-    background-color: rgb(76, 175, 80);
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 16px;
+
     cursor: pointer;
 }
 #inp_numero{
@@ -52,7 +46,7 @@ header{
     font-size:4rem;
     position:relative;
     top:30%;
-    left: 20%;    
+    left: 20%;
     margin-top: 20%;
 }
 #dv_base{
@@ -74,12 +68,12 @@ header{
     display: none;
     color: white;
     background-color:rgba(169,167,166,.1);
-    width: 40%;
+    width: 100%;
     font-size: 2rem;
     text-align:center;
     position: relative;
     top: 25%;
-    left: 30%;
+    border: none;
 }
 footer{
     width: 100%;
@@ -111,3 +105,17 @@ footer img{
     margin: auto;
 }
 
+@media (max-width:480px){
+    #inp_numero{
+        margin-top: 50%;
+    }
+    #resultado{
+        left: 0;
+        width: 100%;
+    }
+    #btn_donacion{
+        position: relative;
+        left: 80%;
+    }
+
+}

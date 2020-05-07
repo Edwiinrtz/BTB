@@ -4,6 +4,7 @@
         <title>Base to Base</title>
         <link rel="icon" href="icons/bb16.png" type="image/png"> 
         <meta charset=UTF-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="estilo/estilo.css">
     </head>
@@ -55,13 +56,14 @@
 
         </header>
 
-        <section>
+        <section id="cuerpo">
+
             <form action="/resultado" method="post">   
                 <input type="text" id="inp_numero" autocomplete="off" onkeyup="convertir()">
 
                 <div id="dv_base" title = "base 10" value="1" onclick="cambiar_base()"  >10</div>
 
-                <div id="resultado"></div>
+                <input id="resultado" disabled="on"></input>
             </form>    
         </section>
 

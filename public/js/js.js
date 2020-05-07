@@ -2,7 +2,7 @@ b = 0;
 
 mostrar_texto=(texto)=>{
     obj_resp = document.getElementById("resultado")
-    obj_resp.innerHTML=texto
+    obj_resp.value=texto
     obj_resp.style.display="block"
     
 }
@@ -98,9 +98,9 @@ function isMobile(){
 enviar_mensaje=()=>{
     movil = isMobile()
     if(movil){
-        window.location.replace("whatsapp.com/send?phone=573158331891")
+        window.location.replace("https://wa.me/573158331891")
     }else{
         window.open("https://web.whatsapp.com/send?phone=573158331891")
     }
 
-}
+} 
