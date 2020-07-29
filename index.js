@@ -2,8 +2,6 @@
 const express = require('express');
 const app = express();
 
-//Stripe configuracion
-const stripe = require('stripe')('sk_test_djRuL9jORUrui8gt5NswPETD00ZHChjwRv');
 
 //Engine - HBS
 const hbs = require('hbs');
@@ -24,21 +22,6 @@ app.post('/', async function (req, res) {
 	cantidad = req.body.cantidad_dolares
 	
 })
-
-app.post('/donacion', async (req,res)=>{
-	
-	const paymentIntent = await stripe.paymentIntents.create({
-  		amount: 1099,
-  		currency: 'usd',
-		// Verify your integration in this guide by including this parameter
-		metadata: {integration_check: 'accept_a_payment'},
-	});
-	console.log(paymentIntent)
-	res.render('donacion',{
-		client_secret:paymentIntent.client_secret
-	})
-})
-
 
 app.listen(3000);
 
